@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<complexType name="Contact">
+                <complexContent>
+                    <extension base="ens:sObject">
+                        <sequence>
+                        <element name="Account" nillable="true" minOccurs="0" type="ens:Account"/>
+                        <element name="AccountContactRoles" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="AccountId" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="ActivityHistories" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Assets" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="AssistantName" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="AssistantPhone" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Attachments" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Birthdate" nillable="true" minOccurs="0" type="xsd:date"/>
+                        <element name="CampaignMembers" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="CaseContactRoles" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Cases" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="ContractContactRoles" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="ContractsSigned" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="CreatedBy" nillable="true" minOccurs="0" type="ens:User"/>
+                        <element name="CreatedById" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="CreatedDate" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="Department" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Description" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Email" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="EmailBouncedDate" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="EmailBouncedReason" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="EmailStatuses" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Events" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Fax" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="FirstName" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Histories" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="HomePhone" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="IsDeleted" nillable="true" minOccurs="0" type="xsd:boolean"/>
+                        <element name="Languages__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="LastActivityDate" nillable="true" minOccurs="0" type="xsd:date"/>
+                        <element name="LastCURequestDate" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="LastCUUpdateDate" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="LastModifiedBy" nillable="true" minOccurs="0" type="ens:User"/>
+                        <element name="LastModifiedById" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="LastModifiedDate" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="LastName" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="LeadSource" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Level__c" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MailingCity" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MailingCountry" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MailingPostalCode" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MailingState" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MailingStreet" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="MasterRecord" nillable="true" minOccurs="0" type="ens:Contact"/>
+                        <element name="MasterRecordId" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="MobilePhone" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Name" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Notes" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="NotesAndAttachments" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="OpenActivities" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Opportunities" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="OpportunityContactRoles" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="OtherCity" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="OtherCountry" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="OtherPhone" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="OtherPostalCode" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="OtherState" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="OtherStreet" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Owner" nillable="true" minOccurs="0" type="ens:User"/>
+                        <element name="OwnerId" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="Phone" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="ProcessInstances" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="ProcessSteps" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="ReportsTo" nillable="true" minOccurs="0" type="ens:Contact"/>
+                        <element name="ReportsToId" nillable="true" minOccurs="0" type="tns:ID"/>
+                        <element name="Salutation" nillable="true" minOccurs="0" type="xsd:string"/>
+                        <element name="Shares" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="SystemModstamp" nillable="true" minOccurs="0" type="xsd:dateTime"/>
+                        <element name="Tasks" nillable="true" minOccurs="0" type="tns:QueryResult"/>
+                        <element name="Title" nillable="true" minOccurs="0" type="xsd:string"/>
+                        </sequence>
+                    </extension>
+                </complexContent>
+            </complexType>
